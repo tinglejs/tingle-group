@@ -1,0 +1,37 @@
+/**
+ * GroupList Component Style for tingle
+ * @author jiasong.js
+ *
+ * Copyright 2014-2015, Tingle Team, Alinw.
+ * All rights reserved.
+ */
+
+@require '../node_modules/tingle-style/src/var'
+
+// 未来的可配置项
+tGroupListLineColor = #ddd
+tGroupListHairlineColor = #ccc
+
+.tGroup_List
+  border-top 1px solid tGroupListLineColor
+  border-bottom 1px solid tGroupListLineColor
+.hairline .tGroup_List
+  border-top rem(1) solid tGroupListHairlineColor
+  border-bottom rem(1) solid tGroupListHairlineColor
+.tGroup_List + .tGroup_List
+  border-top none
+
+.tGroup_ListItem
+  position relative
+  min-height 44px
+.tGroup_ListItem:after
+  content ''
+  position absolute
+  bottom 0
+  left 0
+  right 0
+  border-bottom 1px solid tGroupListLineColor
+.hairline .tGroup_ListItem:after
+  border-bottom rem(1) solid tGroupListHairlineColor
+.tGroup_ListItem:last-child:after
+  border-bottom none

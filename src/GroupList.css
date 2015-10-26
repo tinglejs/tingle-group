@@ -1,0 +1,38 @@
+/**
+ * GroupList Component Style for tingle
+ * @author jiasong.js
+ *
+ * Copyright 2014-2015, Tingle Team, Alinw.
+ * All rights reserved.
+ */
+.tGroup_List {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+.hairline .tGroup_List {
+  border-top: 0.013333333333333rem solid #ccc;
+  border-bottom: 0.013333333333333rem solid #ccc;
+}
+.tGroup_List + .tGroup_List {
+  border-top: none;
+}
+.tGroup_ListItem {
+  position: relative;
+  min-height: 44px;
+}
+.tGroup_ListItem:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #ddd;
+}
+.hairline .tGroup_ListItem:after {
+  border-bottom: 0.013333333333333rem solid #ccc;
+}
+.tGroup_ListItem:last-child:after {
+  border-bottom: none;
+}
+
+/*# sourceMappingURL=GroupList.css.map */
