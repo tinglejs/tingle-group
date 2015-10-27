@@ -18,7 +18,6 @@
 }
 .tGroup_ListItem {
   position: relative;
-  min-height: 44px;
 }
 .tGroup_ListItem:after {
   content: '';

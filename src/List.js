@@ -55,7 +55,7 @@ class List extends React.Component {
                 [t.state.lineIndentClassName]: !!t.state.lineIndentClassName
             })}>
                 {React.Children.map(t.props.children, function (Item) {
-                    return <div className='tGroup_ListItem tFBH tFBAC'>{Item}</div>;
+                    return <div className='tGroup_ListItem'>{Item}</div>;
                 })}
             </div>
         );
