@@ -68,14 +68,6 @@ render() {
 }
 ```
 
-## Updates
-
-0.3.0
-
-* 从`0.3.0`开始，不再支持`title`配置。
-* 删除了`itemIndent`配置。
-* 添加了`lineIndent`配置。
-
 ## Links
 
-- [Issues](http://github.com/tinglejs/tingle-group-list/issues)
+- [Issues](http://github.com/tinglejs/tingle-group/issues)
