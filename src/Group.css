@@ -9,9 +9,13 @@
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
 }
-.hairline .tGroup_List {
+.hairline.dpr3 .tGroup_List {
   border-top: 0.013333333333333rem solid #ccc;
   border-bottom: 0.013333333333333rem solid #ccc;
+}
+.hairline.dpr2 .tGroup_List {
+  border-top: 0.5px solid #ccc;
+  border-bottom: 0.5px solid #ccc;
 }
 .tGroup_List + .tGroup_List {
   border-top: none;
@@ -27,8 +31,11 @@
   right: 0;
   border-bottom: 1px solid #ddd;
 }
-.hairline .tGroup_ListItem:after {
+.hairline.dpr3 .tGroup_ListItem:after {
   border-bottom: 0.013333333333333rem solid #ccc;
+}
+.hairline.dpr2 .tGroup_ListItem:after {
+  border-bottom: 0.5px solid #ccc;
 }
 .tGroup_ListItem:last-child:after {
   border-bottom: none;

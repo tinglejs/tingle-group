@@ -15,9 +15,12 @@ tGroupListHairlineColor = #ccc
 .tGroup_List
   border-top 1px solid tGroupListLineColor
   border-bottom 1px solid tGroupListLineColor
-.hairline .tGroup_List
+.hairline.dpr3 .tGroup_List
   border-top rem(1) solid tGroupListHairlineColor
   border-bottom rem(1) solid tGroupListHairlineColor
+.hairline.dpr2 .tGroup_List
+  border-top 0.5px solid tGroupListHairlineColor
+  border-bottom 0.5px solid tGroupListHairlineColor
 .tGroup_List + .tGroup_List
   border-top none
 
@@ -30,7 +33,9 @@ tGroupListHairlineColor = #ccc
   left 0
   right 0
   border-bottom 1px solid tGroupListLineColor
-.hairline .tGroup_ListItem:after
+.hairline.dpr3 .tGroup_ListItem:after
   border-bottom rem(1) solid tGroupListHairlineColor
+.hairline.dpr2 .tGroup_ListItem:after
+  border-bottom 0.5px solid tGroupListHairlineColor
 .tGroup_ListItem:last-child:after
   border-bottom none
