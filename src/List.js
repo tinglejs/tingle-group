@@ -9,6 +9,10 @@ const classnames = require('classnames');
 const {createStyleContext, unitize} = require('tingle-style');
 const style = createStyleContext('tGroup_List');
 
+let isEmptyValue = (v) => {
+    return v === null || v === undefined || v === '';
+};
+
 class List extends React.Component {
 
     constructor(props) {
@@ -77,6 +81,7 @@ class List extends React.Component {
 
     render() {
         let t = this;
+
         return (
             <div className={classnames('tGroup_List', {
                 [t.props.className]: !!t.props.className,
@@ -84,7 +89,8 @@ class List extends React.Component {
                 [t._ItemIndentClassName]: !!t._ItemIndentClassName,
             })}>
                 {React.Children.map(t.props.children, function (Item) {
-                    return <div className='tGroup_ListItem'>{Item}</div>;
+                    // 需要过滤掉空值的item
+                    return !isEmptyValue(Item) ? <div className='tGroup_ListItem'>{Item}</div> : undefined;
                 })}
             </div>
         );

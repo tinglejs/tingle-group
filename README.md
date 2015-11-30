@@ -7,6 +7,10 @@
 * 灵活配置间隔线和子元素的缩进值，而且间隔线和子元素的缩进值是相互独立的，使`IOS`和`Material`风格的多样式列表更加容易实现。
 * 在支持`hairline`显示的设备上自动优化显示成极细的线。
 
+效果预览：
+
+![](https://gw.alicdn.com/tps/TB1efEEKFXXXXXLXFXXXXXXXXXX-347-574.png)
+
 ## Usage
 
 首先引入`Group`，其中`Group`下面包含`Head`和`List`两个子组件。

@@ -1,15 +1,7 @@
-0.2.2 / 2015-09-12
+0.1.5 / 2015-11-30
 ==================
+* fix [#1](https://github.com/tinglejs/tingle-group/issues/1)
 * fix [#2](https://github.com/tinglejs/tingle-group/issues/2)
-
-
-0.2.1 / 2015-09-12
-==================
-
- * if `t.props.title` is falsy , will not render tGroupListHeader
-
-0.2.0 / 2015-09-10
-==================
 
  * 去除 rem
  * 样式优化
