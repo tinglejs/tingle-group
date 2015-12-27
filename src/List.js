@@ -114,4 +114,3 @@ List.propTypes = {
 List.defaultProps = {};
 
 module.exports = List;
-

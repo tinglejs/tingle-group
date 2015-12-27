@@ -8,18 +8,13 @@
 
 const classnames = require('classnames');
 
-class Head extends React.Component {
-    constructor(props) {
-        super(props);
-    }
+let Head = (props) => {
+    return <div className={classnames('tGroup_Head', {
+        [props.className]: !!props.className
+    })}>{props.children}</div>
+};
 
-    render() {
-        let t = this;
-        return <div className={classnames('tGroup_Head', {
-            [t.props.className]: !!t.props.className
-        })}>{t.props.children}</div>
-    }
-}
+Head.displayName = 'Group.Head';
 
 Head.propTypes = {
     className: React.PropTypes.string

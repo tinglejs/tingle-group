@@ -48,12 +48,12 @@ class Demo extends React.Component {
                 <Group>
                     <Group.List itemIndent={[10, 10]}>
                         {0}
-                        {''}
-                        {null}
-                        {undefined}
-                        {[1,2,3].map((value) => {
+                        {''/*该项不输出*/}
+                        {null/*该项不输出*/}
+                        {undefined/*该项不输出*/}
+                        {React.Children.toArray([1,2,3].map((value) => {
                             return <div>遍历项: {value}</div>;
-                        })}
+                        }))}
                     </Group.List>
                 </Group>
             </div>

@@ -10,17 +10,13 @@ const classnames = require('classnames');
 const Head = require('./Head');
 const List = require('./List');
 
-class Group extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-    render() {
-        let t = this;
-        return <div className={classnames('tGroup', {
-            [t.props.className]: !!t.props.className
-        })}>{t.props.children}</div>
-    }
+let Group = (props) => {
+    return <div className={classnames('tGroup', {
+        [props.className]: !!props.className
+    })}>{props.children}</div>
 }
+
+Group.displayName = 'Group';
 
 Group.propTypes = {
     className: React.PropTypes.string
